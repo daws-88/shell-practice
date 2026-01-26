@@ -1,4 +1,5 @@
 #!/bin/bash
+# is a comment;
 PERSON1=Rohith sharma
 PERSON2=rabishek sharma
 
