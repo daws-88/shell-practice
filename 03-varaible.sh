@@ -1,7 +1,8 @@
 #!/bin/bash
 # is a comment
-
-echo "shiva:: how are you rohith?"
-echo "rohith:: i am fine shiva."
-echo "shiva:: what are u doing rohith?"
-echo "rohith::i am a devops engineer shiva."
+PERSON1=rohith sharma
+PERSON2=dhoni
+echo "$PERSON1:: how are you $PERSON2?"
+echo "rohith:: i am fine $PERSON1."
+echo "$PERSON1:: what are u doing $PERSON2?"
+echo "$PERSON2::i am a devops engineer $PERSON1."
