@@ -1,6 +1,6 @@
 #!/bin/bash
 # is a comment
-PERSON1=rohith
+PERSON1="abishek sharma"
 PERSON2=dhoni
 echo "$PERSON1:: how are you $PERSON2?"
 echo "rohith:: i am fine $PERSON1."
