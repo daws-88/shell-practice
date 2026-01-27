@@ -3,6 +3,6 @@
 
 START_TIME=$(date +%S)
 sleep 50 &
-END_TIME=(date +%S))
-TOTAL_TIME=$((START_TIME-END_TIME))
+END_TIME=(date +%S)
+TOTAL_TIME=$((END_TIME-START_TIME))
 echo "script executed in $TOTAL_TIME in seconds"
