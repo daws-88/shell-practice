@@ -1,4 +1,4 @@
 #!/bin/bash
 
-DATE=$(DATE)
+DATE=$(date)
 echo "time stamp executed in: $DATE"
