@@ -3,4 +3,4 @@
 echo "please enter your PIN-NUMBER"
 read PIN-NUMBER
 # PIN-NUMBER is avariable
-echo "PIN enterd is $PIN-NUMBER"
+echo "PIN enterd is :$12345678"
