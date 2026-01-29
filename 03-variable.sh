@@ -2,7 +2,7 @@
 # this arguments passing
 PERSON1=$1
 PERSON2=$2
-echo "dhoni:: how are you rohith ?"
-echo "raina:: i am fine dhoni."
-echo "dhoni:: shall we play crickeit ?"
-echo "raain:: yes we paly"
+echo "$PERSON1:: how are you $PERSON2?"
+echo "$PERSON2:: i am fine $PERSON1."
+echo "$PERSON1:: shall we play crickeit ?"
+echo "$PERSON2:: yes we paly"
