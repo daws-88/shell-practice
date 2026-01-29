@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "please enter your NUMBER"
+echo "please enter number"
+
 read NUMBER
-if [ $(($NUMBER % 2)) -eq 0]; then
-    echo "number is  $NUMBER is even"
+if [ $(($NUMBER % 2)) -eq 0 ]; then
+    echo "given number $NUMBER is even"
 else
-    echo "number is $NUMBER is odd"
+    echo "please number $NUMBER is odd"
 fi
-    
