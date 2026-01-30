@@ -19,6 +19,5 @@ dnf install nginx -y
 VALIDATE $? "nginx"
 dnf install mysql -y
 VALIDATE $? "mysql"
-dnf install java -y
-VALIDATE $? "java"
-exit 0
+dnf install python3 -y
+VALIDARE $? "python3
