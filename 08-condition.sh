@@ -3,7 +3,6 @@
 USERID=$(id -u)
 if [ $USERID -eq 0 ]; then
     echo "rin this script"
-    exit 0
 else
     echo "faliure"
 fi
@@ -12,7 +11,6 @@ fi
 VALIDATE(){
     if [ $1 -eq 0 ]; then
         echo "SUCCESS:: installing $2 is success."
-        exit 0
     else
     echo "FAILURE:: installing $2 is failure."
     fi
