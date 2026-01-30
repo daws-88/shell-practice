@@ -10,15 +10,15 @@ fi
 
 VALIDATE(){
     if [ $1 -eq 0 ]; then
-        echo "SUCCESS:: installing $2 is success."
+        echo "SUCCESS:: removing $2 is success."
     else
-    echo "FAILURE:: installing $2 is failure."
+    echo "FAILURE:: removing $2 is failure."
     fi
 }
 
-dnf install nginx -y
+dnf remove nginx -y
 VALIDATE $? "nginx"
-dnf install mysql -y
+dnf remove mysql -y
 VALIDATE $? "mysql"
-dnf install nodejs -y
+dnf remove  nodejs -y
 VALIDATE $? "nodejs"
