@@ -21,3 +21,4 @@ dnf install mysql -y
 VALIDATE $? "mysql"
 dnf install java -y
 VALIDATE $? "java"
+exit 0
