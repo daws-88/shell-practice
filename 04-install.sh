@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
-    echo "ERROE:: run this script with root privieelage"
+    echo "ERROR:: run this script with root privieelage"
 fi
 
 dnf install nginx -y
