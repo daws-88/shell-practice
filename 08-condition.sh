@@ -14,8 +14,11 @@ VALIDATE(){
     else
     echo "FAILURE:: installing $2 is failure."
     fi
+}
 
 dnf install nginx -y
 VALIDATE $? "nginx"
 dnf install mysql -y
 VALIDATE $? "mysql"
+dnf install nodejs -y
+VALIDATE $? "nodejs"
