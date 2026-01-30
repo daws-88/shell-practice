@@ -9,10 +9,10 @@ fi
 
 VALIDATE() {
     if [ $1 -ne 0 ]; then
-        echo "ERROR:: please run script with root privelege"
+        echo -e "\e[37m ERROR:: please run script with root privelege"
         exit 1
     else
-        echo "installing $2 is SUCCESS"
+        echo -e "\e[37m installing $2 is SUCCESS"
     fi
 
 }
