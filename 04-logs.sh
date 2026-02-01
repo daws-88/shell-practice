@@ -48,7 +48,7 @@ else
 fi
 dnf list installed nodejs
 if [ $? -ne 0 ]; then
-    dnf list install nodejs -y &>> $LOGS_FILE
+    dnf install nodejs -y &>> $LOGS_FILE
     VALIDATE $? "nodejs"
 else
     echo -e "Nodejs is already exist...$Y SKIIPING $N" | tee -a $LOGS_FILE
