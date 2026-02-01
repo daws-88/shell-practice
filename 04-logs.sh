@@ -39,16 +39,16 @@ else
     echo -e "Nginx is already exist....$Y SKIPPING $N" | tee -a $LOGS_FILE
 fi
 
-dnf list installed mysql &>> $LOGS_FILE
+dnf list installed mysql &>>$LOGS_FILE
 if [ $? -ne 0 ]; then
-    dnf list install mysql -y &>> $LOGS_FILE
+    dnf list install mysql -y &>>$LOGS_FILE
     VALIDATE $? "mysql"
 else
     echo -e "Mysql is already exist...$Y SKIIPING $N" | tee -a $LOGS_FILE
 fi
-dnf list installed nodejs
+dnf list installed nodejs &>>$LOGS_FILE
 if [ $? -ne 0 ]; then
-    dnf install nodejs -y &>> $LOGS_FILE
+    dnf install nodejs -y &>>$LOGS_FILE
     VALIDATE $? "nodejs"
 else
     echo -e "Nodejs is already exist...$Y SKIIPING $N" | tee -a $LOGS_FILE
