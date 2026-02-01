@@ -31,9 +31,9 @@ VALIDATE() {
 }
 
 
-dnf list installed nginx &>> $LOGS_FILE
+dnf list installed nginx &>>$LOGS_FILE
 if [ $? -ne 0 ]; then
-    dnf install nginx -y &>> $LOGS_FILE
+    dnf install nginx -y &>>$LOGS_FILE
     VALIDATE $? "nginx"
 else
     echo -e "Nginx is already exist....$Y SKIPPING $N" 
