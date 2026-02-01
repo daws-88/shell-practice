@@ -46,5 +46,5 @@ if [ $? -ne 0 ]; then
     dnf install nodejs -y &>>$LOG_FILE
     VALIDATE $? "nodejs"
 else
-    echo -e "Nodejsis already exist....$Y Nodejs $N" | tee -a $LOG_FILE
+    echo -e "Nodejsis already exist....$Y SKIIPING $N" | tee -a $LOG_FILE
 fi
