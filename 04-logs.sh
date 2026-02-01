@@ -41,11 +41,3 @@ if [ $? -ne 0 ]; then
 else
     echo -e "Mysql is already exist...$Y SKIIPING $N"
 fi
-
-dnf list installed nodejs &>>LOG_FILE
-if [ $? -ne 0 ]; then
-    dnf install nodejs -y &>>LOG_FILE
-    VALIDATE $? "nodejs"
-else
-    echo -e "Nodejs already exist....$Y Nodejs $N"
-fi
