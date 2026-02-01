@@ -23,10 +23,10 @@ fi
 
 VALIDATE() {
     if [ $1 -ne 0 ]; then
-        echo -e "installing $2 ....$R FAILURE $N" | tee -a $LOGS_FILE
+        echo -e "installing $2 ....$R FAILURE $N" 
         exit 1
     else 
-        echo -e " installing $2....$G SUCCESS $N" | tee -a $LOGS_FILE
+        echo -e " installing $2....$G SUCCESS $N" 
     fi
 }
 
@@ -36,7 +36,7 @@ if [ $? -ne 0 ]; then
     dnf install nginx -y &>> $LOGS_FILE
     VALIDATE $? "nginx"
 else
-    echo -e "Nginx is already exist....$Y SKIPPING $N" | tee -a $LOGS_FILE
+    echo -e "Nginx is already exist....$Y SKIPPING $N" 
 fi
 
 dnf list installed mysql &>>$LOGS_FILE
@@ -44,12 +44,12 @@ if [ $? -ne 0 ]; then
     dnf list install mysql -y &>>$LOGS_FILE
     VALIDATE $? "mysql"
 else
-    echo -e "Mysql is already exist...$Y SKIIPING $N" | tee -a $LOGS_FILE
+    echo -e "Mysql is already exist...$Y SKIIPING $N" 
 fi
 dnf list installed nodejs &>>$LOGS_FILE
 if [ $? -ne 0 ]; then
     dnf install nodejs -y &>>$LOGS_FILE
     VALIDATE $? "nodejs"
 else
-    echo -e "Nodejs is already exist...$Y SKIIPING $N" | tee -a $LOGS_FILE
+    echo -e "Nodejs is already exist...$Y SKIIPING $N" 
 fi
