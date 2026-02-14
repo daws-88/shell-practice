@@ -2,5 +2,5 @@
 
 COUNTRY=AUSTRALIA
 echo "my Country name is:$COUNTRY"
-echo "PID of script is: $0"
+echo "PID of script is: $$"
 sh 02-script2.sh
