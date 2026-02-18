@@ -2,4 +2,4 @@
 while read -r line
 do
  echo "City: $line"
-done
+done < name.sh
