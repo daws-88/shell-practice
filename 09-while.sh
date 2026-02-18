@@ -1,5 +1,5 @@
 #!/bin/bash
-b=2
+b=1
 while [ $b -le 20 ]
 do
     echo "$b"
