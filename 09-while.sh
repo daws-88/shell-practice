@@ -1,5 +1,6 @@
 #!/bin/bash
+R="\e[31m"
 while  IFS= read -r line || [ -n "$line" ]
 do
- echo -e "\e[33m City: $line"
+ echo -e "$R City: $line"
 done < name.sh
