@@ -7,3 +7,4 @@ do
     sleep 2
     a=$(($a+1))
 done 
+# while 
