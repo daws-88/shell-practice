@@ -1,10 +1,10 @@
 #!/bin/bash
 t=5
-echo "Start Counting"
+echo "Strat Count"
 while [ $t -gt 0 ]
 do 
-echo "Time left: $t"
-slepp 1
-t=$(($t-1))
+echo "Time left is:$t"
+sleep 1
+t=$(($t -1))
 done
 echo "Times up"
