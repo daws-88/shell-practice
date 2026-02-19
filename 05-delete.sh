@@ -23,4 +23,4 @@ do
 echo "deleteing files $file"
 rm -rf $file
 echo "Deleted files: $file"
-done >>> $FILES_TO_DELETE
+done <<< $FILES_TO_DELETE
