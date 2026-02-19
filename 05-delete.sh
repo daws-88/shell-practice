@@ -11,7 +11,7 @@ mkdir -p $LOG_FOLDER
 echo "Script strated at $(date)" | tee -a $LOG_FILE
 
 SOURCE_DIR=/home/ec2-user/app-logs
-if [ -d $SOURCE_DIR ]
+if [ ! -d $SOURCE_DIR ]
     echo -e "ERROR:$R $SOURCE_DIR $N does not exist"
     exit 1
 fi
