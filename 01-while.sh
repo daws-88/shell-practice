@@ -6,5 +6,5 @@ do
 echo "Time left: $t"
 slepp 1
 t=$(($t-1))
-echo "Times Up"
-dome
+done
+echo "Times up"
