@@ -52,7 +52,7 @@ if [ ! -z "${FILES}" ] ; then
     if [ -f $ZIPFILE ];  then
         echo -e "Archival..$G SUCCESS $N"
 
-        while IFS= read -r project || [ -n "$project" ]
+        while IFS= read -r project 
         do
         echo "deleteing files $project
         rm -rf $project
@@ -61,6 +61,7 @@ if [ ! -z "${FILES}" ] ; then
         
         echo -e "Archival..$R FAILURE $N"
     fi
+    
 
 else
     echo -e "NO files to Archieve $Y SKIIPING $N"
