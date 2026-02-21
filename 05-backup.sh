@@ -58,12 +58,13 @@ if [ ! -z "${FILES}" ] ; then
         rm -rf $project
         echo "Deleted files: $project
         done <<< $FILES
-        
+    else 
+      
         echo -e "Archival..$R FAILURE $N"
+        exit 1
     fi
     
-
 else
     echo -e "NO files to Archieve $Y SKIIPING $N"
-    exit 1
+    
 fi
