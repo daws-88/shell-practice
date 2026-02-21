@@ -50,12 +50,14 @@ if [ ! -z "${FILES}" ] ; then
     ## check Archival sucess or not ###
     if [ -f $ZIPFILE ];  then
         echo -e "Archival..$G SUCCESS $N"
-        while IFS= read -r project || [ -n "$file" ]
+
+        while IFS= read -r project || [ -n "$project" ]
         do
         echo "deleteing files $project
         rm -rf $project
         echo "Deleted files: $project
         done <<< $FILES
+        
         echo -e "Archival..$R FAILURE $N"
     fi
 else
