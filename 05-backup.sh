@@ -7,8 +7,10 @@ USERID=$(id -u)
 LOG_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
 LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log"
+
 SOURCE_DIR=$1
 DEST_DIR=$2
+
 DAYS=${3:-14} # if not provided consider as 14days ##
 mkdir -p $LOG_FOLDER
 echo "Script strated at $(date)" | tee -a $LOG_FILE
