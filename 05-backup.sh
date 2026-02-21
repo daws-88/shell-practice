@@ -18,8 +18,9 @@ if [ $USERID -ne 0 ]; then
     echo "ERROR:: Please run this script as root privelliage"
     exit 1
 fi
+
 USAGE() {
-    echo -e "$R USAGE:: 05-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS> $N" # DAYS optinonal
+    echo -e "$R USAGE:: sudo  05-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS> $N" # DAYS optinonal
     exit 1
 }
 
@@ -60,6 +61,8 @@ if [ ! -z "${FILES}" ] ; then
         
         echo -e "Archival..$R FAILURE $N"
     fi
+
 else
     echo -e "NO files to Archieve $Y SKIIPING $N"
+    exit 1
 fi
