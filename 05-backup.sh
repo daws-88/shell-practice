@@ -40,13 +40,13 @@ if [ ! -d $DEST_DIR_DIR ]; then
 fi
 
 ### Find the files ####
-FILES=$(find $SOURCE_DIR -name "*.log" -type -f +mtime $DAYS)
+FILES=$(find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS)
 
 if [ ! -z "${FILES}" ] ; then
     echo "Files found: $FILES"
     TIMESTAMP=$(date +%F-%H-%M)
     ZIPFILE=$DEST_DIR/app-logs-$TIMESTAMP.zip
-    find $SOURCE_DIR -name "*.log" -type -f +mtime $DAYS | zip -@ -j "$ZIPFILE"
+    find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS | zip -@ -j "$ZIPFILE"
 
     ## check Archival sucess or not ###
     if [ -f $ZIPFILE ];  then
