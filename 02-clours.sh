@@ -1,0 +1,15 @@
+#!/bin/bash
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[37m"
+B="\e[34m"
+M="\e[35m"
+C="\e[36m"
+
+echo -e "$R check this clour $N"
+echo -e "$G check this clour $N"
+echo -e "$Y check this clour $N"
+echo -e "$B check this clour $N"
+echo -e "$M check this clour $N"
+echo -e "$C check this clour $N"
