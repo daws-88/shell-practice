@@ -23,8 +23,6 @@ VALIDATE() {
     fi
 }
 
-
-
 dnf list installed nginx &>>$LOG_FILE
 if [ $? -ne 0 ]; then
     dnf install nginx -y &>>$LOG_FILE
