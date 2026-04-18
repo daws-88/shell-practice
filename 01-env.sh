@@ -1,3 +1,3 @@
 #!/bin/bash
 export COURSE="devops-bash"
-echo "Course name is: $COURSE"gi
+echo "Course name is: $COURSE"
