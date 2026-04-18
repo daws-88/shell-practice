@@ -18,8 +18,6 @@ VALIDATE() {
     fi
 }
 
-
-
 dnf list installed nginx
 if [ $? -ne 0 ]; then
     dnf install nginx -y
@@ -41,7 +39,5 @@ if [ $? -ne 0 ]; then
     dnf install nodejs -y
     VALIDATE $? "nodejs"
 else
-    echo -e "Nodejsis already exist....$Y Nodejs $N"
+    echo -e "Nodejsis already exist....$Y SKIIPING $N"
 fi
-
-
