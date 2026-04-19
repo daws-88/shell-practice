@@ -1,8 +1,15 @@
 #!/bin/bash
-N1=100
-N2=200
-NAME=devops
-COURSES=("linux" "git" "docker")
-SUM=$(($N1+$N2+$NAME))
-echo "Total is: $SUM"
-echo "first course is:${COURSES[0]}"
+set -euo pipefail
+trap 'echo "there is an error in line number $LINENO, command is $BASH_COMMAND"' ERR
+echo "no error"
+pwdddddddd
+echo $PWD
+
+# #!/bin/bash
+# R="\e[31m"
+# N="\e[0m"
+# COUNTRY=INDIA
+# echo -e "my country name is:$R $COUNTRY $N"
+# echo "PID of script is: $$"
+# sh 02-script2.sh
+
