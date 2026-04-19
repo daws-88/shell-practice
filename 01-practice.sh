@@ -3,6 +3,6 @@
 R="\e[31m"
 while IFS= read -r filepath || [ -n "$filepath" ]
 do
-  echo -e " $R city: $filepatg $N"
+  echo -e " $R city: $filepath"
 done < name.sh
 
