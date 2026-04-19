@@ -1,7 +1,7 @@
 #!/bin/bash
 # want to print numbers 1-10
 x=1 # we are intalizing
-while [ $x -le 10 ]; then
+while [ $x -le 10 ]
 do
     echo "$x"
     sleep 2 
