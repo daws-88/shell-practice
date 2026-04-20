@@ -1,8 +1,4 @@
 #!/bin/bash
-# whie loop is used to read file
-R="\e[31m"
-while IFS= read -r filepath || [ -n "$filepath" ]
-do
-  echo -e " $R city: $filepath $N"
-done < name.sh
-
+my_list=("apple" "banana" "cherry")
+my_string="${my_list[*]}"
+echo "$my_string"
