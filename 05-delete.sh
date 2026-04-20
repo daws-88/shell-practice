@@ -10,15 +10,15 @@ LOG_FILE="$LOG_FOLDER/$SCRIPT_NAME.log"
 mkdir -p $LOG_FOLDER
 echo "Script strated at $(date)" | tee -a $LOG_FILE
 
-SOURCE_DIR=/home/ec2-user/app-logs
+SOURCE_DIR=/home/ec2-user/app-logs 
 if [ ! -d $SOURCE_DIR ]; then
-    echo -e "ERROR:$R $SOURCE_DIR $N does not exist"
+    echo -e "ERROR:$R $SOURCE_DIR $N does not exist" &>>$LOG_FILE
     exit 1
 fi
 
 FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -type f -mtime +14)
 
-while IFS= read -r file 
+while IFS= read -r file  &>>$LOG_FILE
 do
 echo "deleteing files $file"
 rm -rf $file
