@@ -56,10 +56,8 @@ if [ ! -z "${FILES}" ]; then
     find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS | zip -@ -j "$ZIP_FILE_NAME"
 
     ### Check Archieval Success or not ###
-    if [ -f $ZIP_FILE_NAME ]
-    then
+    if [ -f $ZIP_FILE_NAME ]; then
         echo -e "Archeival ... $G SUCCESS $N"
-
         ### Delete if success ###
         while IFS= read -r filepath
         do
